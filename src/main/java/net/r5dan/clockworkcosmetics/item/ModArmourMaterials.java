@@ -10,8 +10,8 @@ import net.r5dan.clockworkcosmetics.ClockworkCosmetics;
 import java.util.function.Supplier;
 
 public enum ModArmourMaterials implements ArmorMaterial {
-    COSMETIC_NETHERITE("cosmetic", 26, ItemProperties.NETHERITE.PROTECTION, 25, SoundEvents.ARMOR_EQUIP_GOLD, ItemProperties.NETHERITE.TOUGHNESS, ItemProperties.NETHERITE.KNOCKBACK_RESISTANCE, () -> Ingredient.of(ItemProperties.NETHERITE.Ingredient)),
-    COSMETIC_DIAMOND("cosmetic", 26, ItemProperties.DIAMOND.PROTECTION, 25, SoundEvents.ARMOR_EQUIP_GOLD, ItemProperties.DIAMOND.TOUGHNESS, ItemProperties.DIAMOND.KNOCKBACK_RESISTANCE, () -> Ingredient.of(ItemProperties.DIAMOND.Ingredient));
+    COSMETIC_NETHERITE("cosmetic", 26, ItemProperties.NETHERITE.PROTECTION, 25, ItemProperties.NETHERITE.SOUND, ItemProperties.NETHERITE.TOUGHNESS, ItemProperties.NETHERITE.KNOCKBACK_RESISTANCE, () -> Ingredient.of(ItemProperties.NETHERITE.Ingredient)),
+    COSMETIC_DIAMOND("cosmetic", 26, ItemProperties.DIAMOND.PROTECTION, 25, ItemProperties.DIAMOND.SOUND, ItemProperties.DIAMOND.TOUGHNESS, ItemProperties.DIAMOND.KNOCKBACK_RESISTANCE, () -> Ingredient.of(ItemProperties.DIAMOND.Ingredient));
 
 
     private final String name;

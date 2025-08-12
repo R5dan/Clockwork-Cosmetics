@@ -21,7 +21,10 @@ public class ModTags {
         public static final TagKey<Item> COSMETICS = tag("cosmetics");
         public static final TagKey<Item> NETHERITE_COSMETICS = tag("netherite_cosmetics");
         public static final TagKey<Item> DIAMOND_COSMETICS = tag("diamond_cosmetics");
-        public static final TagKey<Item> COSMETICS_1 = tag("cosmetics_1");
+        public static final TagKey<Item> IRON_COSMETICS = tag("iron_cosmetics");
+        public static final TagKey<Item> GOLD_COSMETICS = tag("gold_cosmetics");
+        public static final TagKey<Item> LEATHER_COSMETICS = tag("leather_cosmetics");
+        public static final TagKey<Item> COSMETICS_1 = tag("cosmetic_1");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(ClockworkCosmetics.MOD_ID, name));
