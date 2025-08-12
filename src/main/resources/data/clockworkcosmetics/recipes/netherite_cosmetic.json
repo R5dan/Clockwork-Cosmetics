@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_helmet"
+  },
+  "base": {
+    "tag": "#clockworkcosmetics:cosmetic_1"
+  },
+  "result": {
+    "item": "clockworkcosmetics:netherite_cosmetic"
+  },
+  "template": {}
+}
