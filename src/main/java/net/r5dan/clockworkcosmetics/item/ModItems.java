@@ -7,17 +7,17 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.r5dan.clockworkcosmetics.ClockworkCosmetics;
-import com.simibubi.create.content.equipment.armor.DivingHelmetItem;
+// import com.simibubi.create.content.equipment.armor.DivingHelmetItem;
+import net.r5dan.clockworkcosmetics.item.armor.BucketHatArmourItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ClockworkCosmetics.MOD_ID);
 
-    private static final RegistryObject<Item> NETHERITE_COSMETIC = ITEMS.register("netherite_cosmetic", () -> new ArmorItem(ModArmourMaterials.COSMETIC_NETHERITE, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
-    private static final RegistryObject<Item> DIAMOND_COSMETIC = ITEMS.register("diamond_cosmetic", () -> new ArmorItem(ModArmourMaterials.COSMETIC_DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()));
-
+    public static final RegistryObject<BucketHatArmourItem> BUCKET_HAT = ITEMS.register("bucket_hat", BucketHatArmourItem::new);
 
     public static void register(IEventBus eventBus) {
+        ClockworkCosmetics.LOGGER.debug("REGISTERING ITEMS: {}", ITEMS.toString());
         ITEMS.register(eventBus);
     }
 }
